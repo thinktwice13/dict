@@ -1,10 +1,15 @@
-import { Input, Form } from 'antd';
+import { Input, Form, Row } from 'antd';
 import { SyncOutlined } from '@ant-design/icons';
+import { SearchSelect } from '../components';
 
 const New = () => {
   return (
     <>
-      <SyncOutlined style={{ fontSize: '24px' }} />
+      <Row>
+        <SearchSelect />
+        <SyncOutlined style={{ fontSize: '24px' }} />
+        <SearchSelect />
+      </Row>
       <Form layout="vertical">
         <Form.Item label="Phrase" name="Phrase">
           <Input.TextArea
