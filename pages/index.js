@@ -1,29 +1,26 @@
-import styles from '../styles/Home.module.css';
 import { Typography } from 'antd';
-
 import { List } from '../components';
 
-export default () => {
+const Home = () => {
   return (
     <div>
-      <main className={styles.main}>
-        <Typography.Title>Welcome to Dict!</Typography.Title>
-        {/* <p className={styles.description}>
+      <Typography.Title>Welcome to Dict!</Typography.Title>
+      {/* <p className={styles.description}>
         Get started by editing{' '}
         <code className={styles.code}>pages/index.js</code>
       </p> */}
-        <div
-          style={
-            {
-              // display: 'flex',
-              // flexDirection: 'row',
-              // width: '100%',
-            }
+      <div
+        style={
+          {
+            // display: 'flex',
+            // flexDirection: 'row',
+            // width: '100%',
           }
-        >
-          <List />
+        }
+      >
+        <List />
 
-          {/* <a href="https://nextjs.org/learn" className={styles.card}>
+        {/* <a href="https://nextjs.org/learn" className={styles.card}>
           <h3>Learn &rarr;</h3>
           <p>Learn about Next.js in an interactive course with quizzes!</p>
         </a>
@@ -43,8 +40,9 @@ export default () => {
           <h3>Deploy &rarr;</h3>
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a> */}
-        </div>
-      </main>
+      </div>
     </div>
   );
 };
+
+export default Home;

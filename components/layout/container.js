@@ -10,7 +10,7 @@ const Conttainer = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {children}
+      <main className={styles.main}>{children}</main>
 
       <footer className={styles.footer}>
         <a
