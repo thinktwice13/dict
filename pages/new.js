@@ -1,8 +1,10 @@
 import { Input, Form } from 'antd';
+import { SyncOutlined } from '@ant-design/icons';
 
 const New = () => {
   return (
     <>
+      <SyncOutlined style={{ fontSize: '24px' }} />
       <Form layout="vertical">
         <Form.Item label="Phrase" name="Phrase">
           <Input.TextArea
