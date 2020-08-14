@@ -1,5 +1,5 @@
-import 'antd/dist/antd.css';
-import '../styles/globals.css';
+// import 'antd/dist/antd.css';
+// import '../styles/globals.css';
 import { Layout } from '../components';
 
 // eslint-disable-next-line

@@ -4,6 +4,7 @@ import { List } from '../components';
 const Home = () => {
   return (
     <div>
+      <h1>Welcome to Dict!</h1>
       <Typography.Title>Welcome to Dict!</Typography.Title>
       {/* <p className={styles.description}>
         Get started by editing{' '}
