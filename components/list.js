@@ -1,4 +1,4 @@
-import { List, Typography, Divider } from 'antd';
+import { List, Divider } from 'antd';
 
 const data = [
   'Racing car sprays burning fuel into crowd.',
@@ -11,29 +11,10 @@ const data = [
 const ListComponent = () => {
   return (
     <>
-      <Divider orientation="left">Default Size</Divider>
-      <List
-        header={<div>Header</div>}
-        footer={<div>Footer</div>}
-        bordered
-        dataSource={data}
-        renderItem={(item) => (
-          <List.Item>
-            <Typography.Text mark>[ITEM]</Typography.Text> {item}
-          </List.Item>
-        )}
-      />
-      <Divider orientation="left">Small Size</Divider>
-      <List
-        size="small"
-        header={<div>Header</div>}
-        footer={<div>Footer</div>}
-        bordered
-        dataSource={data}
-        renderItem={(item) => <List.Item>{item}</List.Item>}
-      />
       <Divider orientation="left">Large Size</Divider>
       <List
+        // column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+        style={{ width: '100%' }}
         size="large"
         header={<div>Header</div>}
         footer={<div>Footer</div>}
