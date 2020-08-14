@@ -6,7 +6,7 @@ import { Layout } from '../components';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout.Container>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Layout.Container>
   );
 }

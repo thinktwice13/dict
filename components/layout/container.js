@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
 
 // eslint-disable-next-line
-export default ({ children }) => {
+const Conttainer = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,3 +25,5 @@ export default ({ children }) => {
     </div>
   );
 };
+
+export default Conttainer;
