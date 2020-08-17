@@ -1,6 +1,7 @@
-import { List } from '../components';
+import { List as RecentPhrasesList } from '../components';
 import styled from 'styled-components';
-import { Typography } from 'antd';
+import { Typography, Button } from 'antd';
+import Router from 'next/router';
 
 const TitleContainer = styled.h1`
   margin: 0;
@@ -19,7 +20,16 @@ const Home = () => {
         Get started by editing{' '}
         <code className={styles.code}>pages/index.js</code>
       </p> */}
-      <List />
+
+      <Button
+        block
+        size="large"
+        type="primary"
+        onClick={() => Router.push('/new')}
+      >
+        New Phrase
+      </Button>
+      <RecentPhrasesList />
     </>
   );
 };

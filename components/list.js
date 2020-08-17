@@ -11,7 +11,7 @@ const data = [
 const ListComponent = () => {
   return (
     <>
-      <Divider orientation="left">Large Size</Divider>
+      <Divider orientation="left">Recent phrases</Divider>
       <List
         // column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
         style={{ width: '100%' }}
