@@ -1,7 +1,9 @@
 import { List as RecentPhrasesList } from '../components';
 import styled from 'styled-components';
-import { Typography, Button } from 'antd';
+import { Typography, Button, Input, Divider } from 'antd';
 import Router from 'next/router';
+
+const { Search } = Input;
 
 const TitleContainer = styled.h1`
   margin: 0;
@@ -29,6 +31,12 @@ const Home = () => {
       >
         New Phrase
       </Button>
+      <Divider orientation="left">Recent Phrases</Divider>
+      <Search
+        placeholder="Search recent phrases"
+        onSearch={(value) => console.log(value)}
+        style={{ width: 200, marginBottom: '1rem' }}
+      />
       <RecentPhrasesList />
     </>
   );

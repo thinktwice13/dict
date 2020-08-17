@@ -10,19 +10,16 @@ const data = [
 
 const ListComponent = () => {
   return (
-    <>
-      <Divider orientation="left">Recent phrases</Divider>
-      <List
-        // column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
-        style={{ width: '100%' }}
-        size="large"
-        header={<div>Header</div>}
-        footer={<div>Footer</div>}
-        bordered
-        dataSource={data}
-        renderItem={(item) => <List.Item>{item}</List.Item>}
-      />
-    </>
+    <List
+      // column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+      style={{ width: '100%' }}
+      size="large"
+      header={<div>Header</div>}
+      footer={<div>Footer</div>}
+      bordered
+      dataSource={data}
+      renderItem={(item) => <List.Item>{item}</List.Item>}
+    />
   );
 };
 
