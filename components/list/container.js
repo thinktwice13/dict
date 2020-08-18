@@ -1,4 +1,4 @@
-import { List, Divider } from 'antd';
+import { List } from 'antd';
 
 const data = [
   'Racing car sprays burning fuel into crowd.',

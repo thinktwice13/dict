@@ -1,4 +1,4 @@
-import { List as RecentPhrasesList } from '../components';
+import { ListContainer } from '../components';
 import styled from 'styled-components';
 import { Typography, Button, Input, Divider } from 'antd';
 import Router from 'next/router';
@@ -37,7 +37,7 @@ const Home = () => {
         onSearch={(value) => console.log(value)}
         style={{ width: 200, marginBottom: '1rem' }}
       />
-      <RecentPhrasesList />
+      <ListContainer />
     </>
   );
 };
