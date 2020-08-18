@@ -13,11 +13,26 @@ const TitleContainer = styled.h1`
 `;
 
 const data = [
-  'Racing car sprays burning fuel into crowd.',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
+  {
+    description: 'Some description',
+    title: 'Racing car sprays burning fuel into crowd.',
+  },
+  {
+    description: 'Some description',
+    title: 'Japanese princess to wed commoner.',
+  },
+  {
+    description: 'Some description',
+    title: 'Australian walks 100km after outback crash.',
+  },
+  {
+    description: 'Some description',
+    title: 'Man charged over missing wedding girl.',
+  },
+  {
+    description: 'Some description',
+    title: 'Los Angeles battles huge wildfires.',
+  },
 ];
 
 const Home = () => {
@@ -47,7 +62,9 @@ const Home = () => {
       />
       <ListContainer
         data={data}
-        renderItem={(item) => <RecentListItem text={item} />}
+        renderItem={(item) => (
+          <RecentListItem title={item.title} description={item.description} />
+        )}
       />
     </>
   );

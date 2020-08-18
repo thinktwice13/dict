@@ -1,10 +1,15 @@
 import { List } from 'antd';
 import PropTypes from 'prop-types';
 
-const RecentListItem = ({ text }) => <List.Item>{text}</List.Item>;
+const RecentListItem = ({ title, description }) => (
+  <List.Item>
+    <List.Item.Meta title={title} description={description} />
+  </List.Item>
+);
 
 RecentListItem.propTypes = {
-  text: PropTypes.string.isRequired, // TODO update
+  title: PropTypes.string.isRequired, // TODO update
+  description: PropTypes.string.isRequired,
 };
 
 export { RecentListItem };
