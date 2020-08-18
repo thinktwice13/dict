@@ -1,0 +1,1 @@
+export { PhraseDetail } from './[phraseId]';
