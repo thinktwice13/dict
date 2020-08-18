@@ -1,4 +1,4 @@
-import { ListContainer } from '../components';
+import { ListContainer, RecentListItem } from '../components';
 import styled from 'styled-components';
 import { Typography, Button, Input, Divider } from 'antd';
 import Router from 'next/router';
@@ -11,6 +11,14 @@ const TitleContainer = styled.h1`
   font-size: 4rem;
   text-align: center;
 `;
+
+const data = [
+  'Racing car sprays burning fuel into crowd.',
+  'Japanese princess to wed commoner.',
+  'Australian walks 100km after outback crash.',
+  'Man charged over missing wedding girl.',
+  'Los Angeles battles huge wildfires.',
+];
 
 const Home = () => {
   return (
@@ -37,7 +45,10 @@ const Home = () => {
         onSearch={(value) => console.log(value)}
         style={{ width: 200, marginBottom: '1rem' }}
       />
-      <ListContainer />
+      <ListContainer
+        data={data}
+        renderItem={(item) => <RecentListItem text={item} />}
+      />
     </>
   );
 };
