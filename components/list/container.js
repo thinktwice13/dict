@@ -1,14 +1,7 @@
 import { List } from 'antd';
+import PropTypes from 'prop-types';
 
-const data = [
-  'Racing car sprays burning fuel into crowd.',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
-];
-
-const ListComponent = () => {
+const ListContainer = ({ data, renderItem }) => {
   return (
     <List
       // column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
@@ -18,9 +11,14 @@ const ListComponent = () => {
       footer={<div>Footer</div>}
       bordered
       dataSource={data}
-      renderItem={(item) => <List.Item>{item}</List.Item>}
+      renderItem={renderItem}
     />
   );
 };
 
-export default ListComponent;
+ListContainer.propTypes = {
+  data: PropTypes.object.isRequired,
+  renderItem: PropTypes.func.isRequired,
+};
+
+export default ListContainer;
